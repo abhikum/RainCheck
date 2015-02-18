@@ -1,0 +1,47 @@
+﻿<div layout="column" ng-controller="RainCheckCtrl as vm">
+    <md-content class="md-padding" layout="row" layout-sm="column">
+        <form name="userForm" ng-submit="submitRaincheck()">
+            <div layout layout-sm="row">
+                <md-input-container flex>
+                    <label>Item Name</label>
+                    <input required name="itemname" ng-model="raincheck.itemname">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="row">
+                <md-input-container flex>
+                    <label>Quantity</label>
+                    <input required type="number" name="qty" ng-model="raincheck.qty">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="row">
+                <md-input-container flex>
+                    <label>Regular Price</label>
+                    <input required name="regprice" ng-model="raincheck.regularprice">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="row">
+                <md-input-container flex>
+                    <label>Sale Price</label>
+                    <input required name="saleprice" ng-model="raincheck.saleprice">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="row">
+                <md-input-container flex>
+                    <label>Full Name</label>
+                    <input required name="fullname" ng-model="raincheck.fullname">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="row">
+                <md-input-container flex>
+                    <label>Email</label>
+                    <input required type="email" name="email" ng-model="raincheck.email">
+                </md-input-container>
+            </div>
+            <div layout layout-sm="row">
+                <md-input-container flex>
+                    <md-button class="md-raised md-primary" style="width:100%;height:50px;display:block" type="submit">Issue Raincheck</md-button>
+                </md-input-container>
+            </div>
+        </form>
+    </md-content>
+</div>

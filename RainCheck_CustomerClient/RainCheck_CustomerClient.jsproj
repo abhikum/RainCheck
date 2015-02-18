@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone 8">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone 8">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone 8">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>ccd88f77-a72d-436a-b086-917dba9fd8e7</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Content Include="app\app.js" />
+    <Content Include="app\appapi.js" />
+    <Content Include="app\auth\login-ctrl.js" />
+    <Content Include="app\auth\login.html" />
+    <Content Include="app\layout\layout-ctrl.js" />
+    <Content Include="app\layout\layout.html" />
+    <Content Include="app\raincheck\raincheck-list-ctrl.js" />
+    <Content Include="app\raincheck\raincheck-list.html" />
+    <Content Include="bower_components\angular-animate\.bower.json" />
+    <Content Include="bower_components\angular-animate\angular-animate.js" />
+    <Content Include="bower_components\angular-animate\angular-animate.min.js" />
+    <Content Include="bower_components\angular-animate\angular-animate.min.js.map" />
+    <Content Include="bower_components\angular-animate\bower.json" />
+    <Content Include="bower_components\angular-animate\index.js" />
+    <Content Include="bower_components\angular-animate\package.json" />
+    <Content Include="bower_components\angular-animate\README.md" />
+    <Content Include="bower_components\angular-aria\.bower.json" />
+    <Content Include="bower_components\angular-aria\angular-aria.js" />
+    <Content Include="bower_components\angular-aria\angular-aria.min.js" />
+    <Content Include="bower_components\angular-aria\angular-aria.min.js.map" />
+    <Content Include="bower_components\angular-aria\bower.json" />
+    <Content Include="bower_components\angular-aria\index.js" />
+    <Content Include="bower_components\angular-aria\package.json" />
+    <Content Include="bower_components\angular-aria\README.md" />
+    <Content Include="bower_components\angular-material\.bower.json" />
+    <Content Include="bower_components\angular-material\angular-material.css" />
+    <Content Include="bower_components\angular-material\angular-material.js" />
+    <Content Include="bower_components\angular-material\angular-material.min.css" />
+    <Content Include="bower_components\angular-material\angular-material.min.js" />
+    <Content Include="bower_components\angular-material\bower.json" />
+    <Content Include="bower_components\angular-material\LICENSE" />
+    <Content Include="bower_components\angular-material\modules\closure\backdrop\backdrop-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\backdrop\backdrop.css" />
+    <Content Include="bower_components\angular-material\modules\closure\backdrop\backdrop.js" />
+    <Content Include="bower_components\angular-material\modules\closure\bottomSheet\bottomSheet-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\bottomSheet\bottomSheet.css" />
+    <Content Include="bower_components\angular-material\modules\closure\bottomSheet\bottomSheet.js" />
+    <Content Include="bower_components\angular-material\modules\closure\button\button-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\button\button.css" />
+    <Content Include="bower_components\angular-material\modules\closure\button\button.js" />
+    <Content Include="bower_components\angular-material\modules\closure\card\card-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\card\card.css" />
+    <Content Include="bower_components\angular-material\modules\closure\card\card.js" />
+    <Content Include="bower_components\angular-material\modules\closure\checkbox\checkbox-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\checkbox\checkbox.css" />
+    <Content Include="bower_components\angular-material\modules\closure\checkbox\checkbox.js" />
+    <Content Include="bower_components\angular-material\modules\closure\content\content-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\content\content.css" />
+    <Content Include="bower_components\angular-material\modules\closure\content\content.js" />
+    <Content Include="bower_components\angular-material\modules\closure\core\core.css" />
+    <Content Include="bower_components\angular-material\modules\closure\core\core.js" />
+    <Content Include="bower_components\angular-material\modules\closure\dialog\dialog-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\dialog\dialog.css" />
+    <Content Include="bower_components\angular-material\modules\closure\dialog\dialog.js" />
+    <Content Include="bower_components\angular-material\modules\closure\divider\divider-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\divider\divider.css" />
+    <Content Include="bower_components\angular-material\modules\closure\divider\divider.js" />
+    <Content Include="bower_components\angular-material\modules\closure\icon\icon.css" />
+    <Content Include="bower_components\angular-material\modules\closure\icon\icon.js" />
+    <Content Include="bower_components\angular-material\modules\closure\list\list.css" />
+    <Content Include="bower_components\angular-material\modules\closure\list\list.js" />
+    <Content Include="bower_components\angular-material\modules\closure\menu\menu.css" />
+    <Content Include="bower_components\angular-material\modules\closure\menu\menu.js" />
+    <Content Include="bower_components\angular-material\modules\closure\progressCircular\progressCircular-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\progressCircular\progressCircular.css" />
+    <Content Include="bower_components\angular-material\modules\closure\progressCircular\progressCircular.js" />
+    <Content Include="bower_components\angular-material\modules\closure\progressLinear\progressLinear-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\progressLinear\progressLinear.css" />
+    <Content Include="bower_components\angular-material\modules\closure\progressLinear\progressLinear.js" />
+    <Content Include="bower_components\angular-material\modules\closure\radioButton\radioButton-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\radioButton\radioButton.css" />
+    <Content Include="bower_components\angular-material\modules\closure\radioButton\radioButton.js" />
+    <Content Include="bower_components\angular-material\modules\closure\sidenav\sidenav.css" />
+    <Content Include="bower_components\angular-material\modules\closure\sidenav\sidenav.js" />
+    <Content Include="bower_components\angular-material\modules\closure\slider\slider-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\slider\slider.css" />
+    <Content Include="bower_components\angular-material\modules\closure\slider\slider.js" />
+    <Content Include="bower_components\angular-material\modules\closure\sticky\sticky.css" />
+    <Content Include="bower_components\angular-material\modules\closure\sticky\sticky.js" />
+    <Content Include="bower_components\angular-material\modules\closure\subheader\subheader-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\subheader\subheader.css" />
+    <Content Include="bower_components\angular-material\modules\closure\subheader\subheader.js" />
+    <Content Include="bower_components\angular-material\modules\closure\swipe\swipe.js" />
+    <Content Include="bower_components\angular-material\modules\closure\switch\switch-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\switch\switch.css" />
+    <Content Include="bower_components\angular-material\modules\closure\switch\switch.js" />
+    <Content Include="bower_components\angular-material\modules\closure\tabs\tabs-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\tabs\tabs.css" />
+    <Content Include="bower_components\angular-material\modules\closure\tabs\tabs.js" />
+    <Content Include="bower_components\angular-material\modules\closure\textField\textField-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\textField\textField.css" />
+    <Content Include="bower_components\angular-material\modules\closure\textField\textField.js" />
+    <Content Include="bower_components\angular-material\modules\closure\toast\toast-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\toast\toast.css" />
+    <Content Include="bower_components\angular-material\modules\closure\toast\toast.js" />
+    <Content Include="bower_components\angular-material\modules\closure\toolbar\toolbar-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\toolbar\toolbar.css" />
+    <Content Include="bower_components\angular-material\modules\closure\toolbar\toolbar.js" />
+    <Content Include="bower_components\angular-material\modules\closure\tooltip\tooltip-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\closure\tooltip\tooltip.css" />
+    <Content Include="bower_components\angular-material\modules\closure\tooltip\tooltip.js" />
+    <Content Include="bower_components\angular-material\modules\closure\whiteframe\whiteframe.css" />
+    <Content Include="bower_components\angular-material\modules\closure\whiteframe\whiteframe.js" />
+    <Content Include="bower_components\angular-material\modules\js\backdrop\backdrop-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\backdrop\backdrop-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\backdrop\backdrop.css" />
+    <Content Include="bower_components\angular-material\modules\js\backdrop\backdrop.js" />
+    <Content Include="bower_components\angular-material\modules\js\backdrop\backdrop.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\backdrop\backdrop.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\backdrop\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\bottomSheet\bottomSheet-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\bottomSheet\bottomSheet-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\bottomSheet\bottomSheet.css" />
+    <Content Include="bower_components\angular-material\modules\js\bottomSheet\bottomSheet.js" />
+    <Content Include="bower_components\angular-material\modules\js\bottomSheet\bottomSheet.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\bottomSheet\bottomSheet.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\bottomSheet\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\button\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\button\button-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\button\button-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\button\button.css" />
+    <Content Include="bower_components\angular-material\modules\js\button\button.js" />
+    <Content Include="bower_components\angular-material\modules\js\button\button.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\button\button.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\card\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\card\card-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\card\card-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\card\card.css" />
+    <Content Include="bower_components\angular-material\modules\js\card\card.js" />
+    <Content Include="bower_components\angular-material\modules\js\card\card.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\card\card.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\checkbox\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\checkbox\checkbox-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\checkbox\checkbox-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\checkbox\checkbox.css" />
+    <Content Include="bower_components\angular-material\modules\js\checkbox\checkbox.js" />
+    <Content Include="bower_components\angular-material\modules\js\checkbox\checkbox.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\checkbox\checkbox.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\content\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\content\content-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\content\content-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\content\content.css" />
+    <Content Include="bower_components\angular-material\modules\js\content\content.js" />
+    <Content Include="bower_components\angular-material\modules\js\content\content.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\content\content.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\core\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\core\core.css" />
+    <Content Include="bower_components\angular-material\modules\js\core\core.js" />
+    <Content Include="bower_components\angular-material\modules\js\core\core.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\core\core.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\dialog\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\dialog\dialog-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\dialog\dialog-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\dialog\dialog.css" />
+    <Content Include="bower_components\angular-material\modules\js\dialog\dialog.js" />
+    <Content Include="bower_components\angular-material\modules\js\dialog\dialog.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\dialog\dialog.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\divider\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\divider\divider-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\divider\divider-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\divider\divider.css" />
+    <Content Include="bower_components\angular-material\modules\js\divider\divider.js" />
+    <Content Include="bower_components\angular-material\modules\js\divider\divider.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\divider\divider.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\icon\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\icon\icon.css" />
+    <Content Include="bower_components\angular-material\modules\js\icon\icon.js" />
+    <Content Include="bower_components\angular-material\modules\js\icon\icon.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\icon\icon.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\list\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\list\list.css" />
+    <Content Include="bower_components\angular-material\modules\js\list\list.js" />
+    <Content Include="bower_components\angular-material\modules\js\list\list.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\list\list.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\menu\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\menu\menu.css" />
+    <Content Include="bower_components\angular-material\modules\js\menu\menu.js" />
+    <Content Include="bower_components\angular-material\modules\js\menu\menu.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\menu\menu.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\progressCircular\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\progressCircular\progressCircular-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressCircular\progressCircular-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressCircular\progressCircular.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressCircular\progressCircular.js" />
+    <Content Include="bower_components\angular-material\modules\js\progressCircular\progressCircular.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressCircular\progressCircular.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\progressLinear\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\progressLinear\progressLinear-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressLinear\progressLinear-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressLinear\progressLinear.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressLinear\progressLinear.js" />
+    <Content Include="bower_components\angular-material\modules\js\progressLinear\progressLinear.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\progressLinear\progressLinear.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\radioButton\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\radioButton\radioButton-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\radioButton\radioButton-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\radioButton\radioButton.css" />
+    <Content Include="bower_components\angular-material\modules\js\radioButton\radioButton.js" />
+    <Content Include="bower_components\angular-material\modules\js\radioButton\radioButton.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\radioButton\radioButton.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\sidenav\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\sidenav\sidenav.css" />
+    <Content Include="bower_components\angular-material\modules\js\sidenav\sidenav.js" />
+    <Content Include="bower_components\angular-material\modules\js\sidenav\sidenav.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\sidenav\sidenav.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\slider\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\slider\slider-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\slider\slider-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\slider\slider.css" />
+    <Content Include="bower_components\angular-material\modules\js\slider\slider.js" />
+    <Content Include="bower_components\angular-material\modules\js\slider\slider.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\slider\slider.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\sticky\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\sticky\sticky.css" />
+    <Content Include="bower_components\angular-material\modules\js\sticky\sticky.js" />
+    <Content Include="bower_components\angular-material\modules\js\sticky\sticky.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\sticky\sticky.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\subheader\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\subheader\subheader-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\subheader\subheader-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\subheader\subheader.css" />
+    <Content Include="bower_components\angular-material\modules\js\subheader\subheader.js" />
+    <Content Include="bower_components\angular-material\modules\js\subheader\subheader.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\subheader\subheader.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\swipe\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\swipe\swipe.js" />
+    <Content Include="bower_components\angular-material\modules\js\swipe\swipe.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\switch\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\switch\switch-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\switch\switch-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\switch\switch.css" />
+    <Content Include="bower_components\angular-material\modules\js\switch\switch.js" />
+    <Content Include="bower_components\angular-material\modules\js\switch\switch.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\switch\switch.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\tabs\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\tabs\tabs-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\tabs\tabs-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\tabs\tabs.css" />
+    <Content Include="bower_components\angular-material\modules\js\tabs\tabs.js" />
+    <Content Include="bower_components\angular-material\modules\js\tabs\tabs.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\tabs\tabs.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\textField\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\textField\textField-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\textField\textField-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\textField\textField.css" />
+    <Content Include="bower_components\angular-material\modules\js\textField\textField.js" />
+    <Content Include="bower_components\angular-material\modules\js\textField\textField.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\textField\textField.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\toast\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\toast\toast-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\toast\toast-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\toast\toast.css" />
+    <Content Include="bower_components\angular-material\modules\js\toast\toast.js" />
+    <Content Include="bower_components\angular-material\modules\js\toast\toast.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\toast\toast.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\toolbar\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\toolbar\toolbar-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\toolbar\toolbar-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\toolbar\toolbar.css" />
+    <Content Include="bower_components\angular-material\modules\js\toolbar\toolbar.js" />
+    <Content Include="bower_components\angular-material\modules\js\toolbar\toolbar.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\toolbar\toolbar.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\tooltip\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\tooltip\tooltip-default-theme.css" />
+    <Content Include="bower_components\angular-material\modules\js\tooltip\tooltip-default-theme.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\tooltip\tooltip.css" />
+    <Content Include="bower_components\angular-material\modules\js\tooltip\tooltip.js" />
+    <Content Include="bower_components\angular-material\modules\js\tooltip\tooltip.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\tooltip\tooltip.min.js" />
+    <Content Include="bower_components\angular-material\modules\js\whiteframe\bower.json" />
+    <Content Include="bower_components\angular-material\modules\js\whiteframe\whiteframe.css" />
+    <Content Include="bower_components\angular-material\modules\js\whiteframe\whiteframe.js" />
+    <Content Include="bower_components\angular-material\modules\js\whiteframe\whiteframe.min.css" />
+    <Content Include="bower_components\angular-material\modules\js\whiteframe\whiteframe.min.js" />
+    <Content Include="bower_components\angular-material\README.md" />
+    <Content Include="bower_components\angular-material\themes\amber-theme.css" />
+    <Content Include="bower_components\angular-material\themes\blue-grey-theme.css" />
+    <Content Include="bower_components\angular-material\themes\blue-theme.css" />
+    <Content Include="bower_components\angular-material\themes\brown-theme.css" />
+    <Content Include="bower_components\angular-material\themes\cyan-theme.css" />
+    <Content Include="bower_components\angular-material\themes\deep-orange-theme.css" />
+    <Content Include="bower_components\angular-material\themes\deep-purple-theme.css" />
+    <Content Include="bower_components\angular-material\themes\green-theme.css" />
+    <Content Include="bower_components\angular-material\themes\grey-theme.css" />
+    <Content Include="bower_components\angular-material\themes\indigo-theme.css" />
+    <Content Include="bower_components\angular-material\themes\light-blue-dark-theme.css" />
+    <Content Include="bower_components\angular-material\themes\light-green-theme.css" />
+    <Content Include="bower_components\angular-material\themes\lime-theme.css" />
+    <Content Include="bower_components\angular-material\themes\orange-theme.css" />
+    <Content Include="bower_components\angular-material\themes\pink-theme.css" />
+    <Content Include="bower_components\angular-material\themes\purple-theme.css" />
+    <Content Include="bower_components\angular-material\themes\red-theme.css" />
+    <Content Include="bower_components\angular-material\themes\teal-theme.css" />
+    <Content Include="bower_components\angular-material\themes\yellow-theme.css" />
+    <Content Include="bower_components\angular-ui-router\.bower.json" />
+    <Content Include="bower_components\angular-ui-router\bower.json" />
+    <Content Include="bower_components\angular-ui-router\CHANGELOG.md" />
+    <Content Include="bower_components\angular-ui-router\CONTRIBUTING.md" />
+    <Content Include="bower_components\angular-ui-router\LICENSE" />
+    <Content Include="bower_components\angular-ui-router\README.md" />
+    <Content Include="bower_components\angular-ui-router\release\angular-ui-router.js" />
+    <Content Include="bower_components\angular-ui-router\release\angular-ui-router.min.js" />
+    <Content Include="bower_components\angular-ui-router\src\common.js" />
+    <Content Include="bower_components\angular-ui-router\src\resolve.js" />
+    <Content Include="bower_components\angular-ui-router\src\state.js" />
+    <Content Include="bower_components\angular-ui-router\src\stateDirectives.js" />
+    <Content Include="bower_components\angular-ui-router\src\stateFilters.js" />
+    <Content Include="bower_components\angular-ui-router\src\templateFactory.js" />
+    <Content Include="bower_components\angular-ui-router\src\urlMatcherFactory.js" />
+    <Content Include="bower_components\angular-ui-router\src\urlRouter.js" />
+    <Content Include="bower_components\angular-ui-router\src\view.js" />
+    <Content Include="bower_components\angular-ui-router\src\viewDirective.js" />
+    <Content Include="bower_components\angular-ui-router\src\viewScroll.js" />
+    <Content Include="bower_components\angular\.bower.json" />
+    <Content Include="bower_components\angular\angular-csp.css" />
+    <Content Include="bower_components\angular\angular.js" />
+    <Content Include="bower_components\angular\angular.min.js" />
+    <Content Include="bower_components\angular\angular.min.js.gzip" />
+    <Content Include="bower_components\angular\angular.min.js.map" />
+    <Content Include="bower_components\angular\bower.json" />
+    <Content Include="bower_components\angular\index.js" />
+    <Content Include="bower_components\angular\package.json" />
+    <Content Include="bower_components\angular\README.md" />
+    <Content Include="bower_components\hammerjs\.bower.json" />
+    <Content Include="bower_components\hammerjs\.bowerrc" />
+    <Content Include="bower_components\hammerjs\.gitignore" />
+    <Content Include="bower_components\hammerjs\.jscsrc" />
+    <Content Include="bower_components\hammerjs\.jshintrc" />
+    <Content Include="bower_components\hammerjs\.travis.yml" />
+    <Content Include="bower_components\hammerjs\bower.json" />
+    <Content Include="bower_components\hammerjs\CHANGELOG.md" />
+    <Content Include="bower_components\hammerjs\component.json" />
+    <Content Include="bower_components\hammerjs\CONTRIBUTING.md" />
+    <Content Include="bower_components\hammerjs\Gruntfile.coffee" />
+    <Content Include="bower_components\hammerjs\hammer.js" />
+    <Content Include="bower_components\hammerjs\hammer.min.js" />
+    <Content Include="bower_components\hammerjs\hammer.min.map" />
+    <Content Include="bower_components\hammerjs\LICENSE.md" />
+    <Content Include="bower_components\hammerjs\package.json" />
+    <Content Include="bower_components\hammerjs\README.md" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows\scripts\platformOverrides.js" />
+    <Content Include="merges\windows\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="plugins\com.microsoft.azure-mobile-services\.fetch.json" />
+    <Content Include="plugins\com.microsoft.azure-mobile-services\LICENSE.txt" />
+    <Content Include="plugins\com.microsoft.azure-mobile-services\plugin.xml" />
+    <Content Include="plugins\com.microsoft.azure-mobile-services\README.md" />
+    <Content Include="plugins\com.microsoft.azure-mobile-services\www\MobileServices.Web.min.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\.fetch.json" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\server\pushADM.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\server\pushAPNS.rb" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\server\pushGCM.rb" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\beep.wav" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\index.html" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\jquery_1.5.2.min.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\PushNotification.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\MIT-LICENSE" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\plugin.xml" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\genericpush.tests.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\HtmlReporter.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\HtmlReporterHelpers.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\ReporterView.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\SpecView.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\SuiteView.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\TrivialReporter.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\index.html" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\jasmine.css" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\jasmine.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\test-runner.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\amazon\ADMHandlerActivity.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\amazon\ADMMessageHandler.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\amazon\PushPlugin.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\android-support-v13.jar" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\CordovaGCMBroadcastReceiver.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\GCMIntentService.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\PushHandlerActivity.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\PushPlugin.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\libs\gcm.jar" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\AppDelegate+notification.h" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\AppDelegate+notification.m" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\PushPlugin.h" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\PushPlugin.m" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\windows8\PushPluginProxy.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\wp8\Newtonsoft.Json.dll" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\wp8\PushPlugin.cs" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\www\blackberry10\PushPluginProxy.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\www\PushNotification.js" />
+    <Content Include="plugins\org.apache.cordova.device\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.device\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.device\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.device\package.json" />
+    <Content Include="plugins\org.apache.cordova.device\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.device\README.md" />
+    <Content Include="plugins\org.apache.cordova.device\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.device\src\android\Device.java" />
+    <Content Include="plugins\org.apache.cordova.device\src\blackberry10\index.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\browser\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\firefoxos\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\ios\CDVDevice.h" />
+    <Content Include="plugins\org.apache.cordova.device\src\ios\CDVDevice.m" />
+    <Content Include="plugins\org.apache.cordova.device\src\tizen\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\ubuntu\device.cpp" />
+    <Content Include="plugins\org.apache.cordova.device\src\ubuntu\device.h" />
+    <Content Include="plugins\org.apache.cordova.device\src\ubuntu\device.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\windows8\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\windows\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\wp\Device.cs" />
+    <Content Include="plugins\org.apache.cordova.device\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.device\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.device\www\device.js" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\package.json" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\README.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\amazon\InAppBrowser.java" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\amazon\InAppChromeClient.java" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\InAppBrowser.java" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\InAppBrowserDialog.java" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\InAppChromeClient.java" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-hdpi\ic_action_next_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-hdpi\ic_action_previous_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-hdpi\ic_action_remove.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-mdpi\ic_action_next_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-mdpi\ic_action_previous_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-mdpi\ic_action_remove.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xhdpi\ic_action_next_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xhdpi\ic_action_previous_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xhdpi\ic_action_remove.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xxhdpi\ic_action_next_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xxhdpi\ic_action_previous_item.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\android\res\drawable-xxhdpi\ic_action_remove.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\blackberry10\README.md" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\firefoxos\InAppBrowserProxy.js" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\ios\CDVInAppBrowser.h" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\ios\CDVInAppBrowser.m" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\ubuntu\close.png" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\ubuntu\inappbrowser.cpp" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\ubuntu\inappbrowser.h" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\ubuntu\InAppBrowser.qml" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\src\wp\InAppBrowser.cs" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\resources\inject.css" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\resources\inject.html" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\resources\inject.js" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\resources\local.html" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\resources\local.pdf" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\resources\video.html" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\www\inappbrowser.js" />
+    <Content Include="plugins\org.apache.cordova.inappbrowser\www\windows8\InAppBrowserProxy.js" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\package.json" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\README.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\android\SplashScreen.java" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\blackberry10\index.js" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\ios\CDVSplashScreen.h" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\ios\CDVSplashScreen.m" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\tizen\SplashScreenProxy.js" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\ubuntu\splashscreen.cpp" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\ubuntu\splashscreen.h" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\src\wp\SplashScreen.cs" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\www\splashscreen.js" />
+    <Content Include="plugins\org.apache.cordova.splashscreen\www\windows8\SplashScreenProxy.js" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="css\index.css" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows\logo.png" />
+    <Content Include="res\icons\windows\smalllogo.png" />
+    <Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
+    <Content Include="res\icons\windows\storelogo.png" />
+    <Content Include="res\icons\windows\StoreLogo.scale-240.png" />
+    <Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\native\android\ant.properties" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows\splashscreen.png" />
+    <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="bower_components\angular-ui-router\api\angular-ui-router.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Tools for Apache Cordova</ProjectUISubcaption>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetPlatformIdentifier>MDD</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>

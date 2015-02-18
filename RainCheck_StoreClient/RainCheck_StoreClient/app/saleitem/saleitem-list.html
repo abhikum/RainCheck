@@ -1,0 +1,22 @@
+﻿<div ng-controller="SaleItemsCtrl as vm">
+    <md-content>
+        <md-list>
+            <md-item ng-repeat="item in vm.items">
+                <md-item-content>
+                    <div class="md-tile-left">
+                        <img ng-src="{{item.imagesrc}}" class="face" width="100px" height="100px"/>                       
+                    </div>
+                    <div class="md-tile-content">
+                        <h3>{{item.itemname}}</h3>
+                        <h4>Sale price: ${{item.saleprice}}</h4>
+                        <h4>Regular Price: ${{item.regularprice}}</h4>
+                        <a ng-href="#/app/form/{{item.itemname}}/{{item.saleprice}}/{{item.regularprice}}">
+                            <md-button class="md-raised md-accent" style="height:35px;font-size:small;text-align:center;">Issue RainCheck</md-button>
+                       </a>
+                    </div>
+                </md-item-content>
+                <md-divider ng-if="!$last"></md-divider>
+            </md-item>
+        </md-list>
+    </md-content>
+</div>
